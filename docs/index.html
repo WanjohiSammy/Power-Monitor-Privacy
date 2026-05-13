@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#00ff88">
+  <title>Privacy Policy - PowerAudit</title>
+  <meta name="description" content="Privacy Policy for PowerAudit - Silent Battery & Power Auditor. We collect zero data.">
+  <link rel="icon" href="../icons/icon-192.png">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+    :root{
+      --bg:#0a0e17;
+      --bg-card:#111827;
+      --text:#e2e8f0;
+      --text-dim:#94a3b8;
+      --accent:#00ff88;
+      --border:#1e293b;
+      --radius:12px;
+    }
+
+    @media(prefers-color-scheme:light){
+      :root{
+        --bg:#f8fafc;
+        --bg-card:#ffffff;
+        --text:#1e293b;
+        --text-dim:#64748b;
+        --accent:#059669;
+        --border:#e2e8f0;
+      }
+    }
+
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+      min-height:100vh;
+    }
+
+    .header{
+      background:var(--bg-card);
+      border-bottom:1px solid var(--border);
+      padding:24px 0;
+      text-align:center;
+    }
+    .header-inner{
+      max-width:720px;
+      margin:0 auto;
+      padding:0 20px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:14px;
+    }
+    .header img{
+      width:48px;
+      height:48px;
+      border-radius:10px;
+    }
+    .header h1{
+      font-size:22px;
+      font-weight:700;
+    }
+    .header h1 span{
+      color:var(--accent);
+    }
+
+    .container{
+      max-width:720px;
+      margin:0 auto;
+      padding:32px 20px 60px;
+    }
+
+    .badge{
+      display:inline-block;
+      background:var(--accent);
+      color:#0a0e17;
+      font-size:11px;
+      font-weight:700;
+      padding:4px 10px;
+      border-radius:20px;
+      text-transform:uppercase;
+      letter-spacing:0.5px;
+      margin-bottom:8px;
+    }
+
+    .hero{
+      text-align:center;
+      margin-bottom:40px;
+    }
+    .hero h2{
+      font-size:28px;
+      font-weight:800;
+      margin-bottom:8px;
+    }
+    .hero p{
+      color:var(--text-dim);
+      font-size:15px;
+    }
+
+    .card{
+      background:var(--bg-card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:24px 28px;
+      margin-bottom:20px;
+    }
+
+    .card h3{
+      font-size:17px;
+      font-weight:700;
+      margin-bottom:10px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .card h3 .icon{
+      font-size:20px;
+    }
+
+    .card p{
+      color:var(--text-dim);
+      font-size:14px;
+      margin-bottom:8px;
+    }
+    .card p:last-child{
+      margin-bottom:0;
+    }
+
+    .card ul{
+      list-style:none;
+      padding:0;
+    }
+    .card ul li{
+      position:relative;
+      padding-left:20px;
+      color:var(--text-dim);
+      font-size:14px;
+      margin-bottom:6px;
+    }
+    .card ul li::before{
+      content:"✓";
+      position:absolute;
+      left:0;
+      color:var(--accent);
+      font-weight:700;
+    }
+
+    .card strong{
+      color:var(--text);
+    }
+
+    .highlight-box{
+      background:rgba(0,255,136,0.06);
+      border:1px solid rgba(0,255,136,0.2);
+      border-radius:8px;
+      padding:16px 20px;
+      text-align:center;
+      margin:32px 0;
+    }
+    .highlight-box p{
+      color:var(--text) !important;
+      font-size:15px;
+      font-weight:600;
+    }
+
+    .footer{
+      text-align:center;
+      padding:32px 20px;
+      border-top:1px solid var(--border);
+      margin-top:20px;
+    }
+    .footer p{
+      color:var(--text-dim);
+      font-size:13px;
+      margin-bottom:8px;
+    }
+    .footer a{
+      color:var(--accent);
+      text-decoration:none;
+      font-weight:600;
+    }
+    .footer a:hover{
+      text-decoration:underline;
+    }
+
+    @media(max-width:480px){
+      .hero h2{font-size:22px}
+      .card{padding:18px 20px}
+      .container{padding:24px 16px 48px}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-inner">
+      <img src="../icons/icon-192.png" alt="PowerAudit icon">
+      <h1><span>Power</span>Audit</h1>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="hero">
+      <span class="badge">Zero Data Collection</span>
+      <h2>🔒 Privacy Policy</h2>
+      <p>Last updated: May 2026</p>
+    </div>
+
+    <div class="highlight-box">
+      <p>PowerAudit does not collect, transmit, or share any personal data. Period.</p>
+    </div>
+
+    <div class="card">
+      <h3><span class="icon">💾</span> Data Storage</h3>
+      <ul>
+        <li>All battery logs are stored <strong>locally on your device</strong> using IndexedDB.</li>
+        <li>Settings are stored locally in IndexedDB and localStorage.</li>
+        <li>No data is ever sent to any server, cloud service, or third party.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="icon">🔋</span> Battery & Sensor Access</h3>
+      <ul>
+        <li>The app reads battery status via the Web BatteryManager API or native platform APIs (Android BatteryManager / iOS).</li>
+        <li>USB sensor data is read locally via the WebUSB API and never transmitted.</li>
+        <li>These APIs are used solely to display and log power metrics on your device.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="icon">🌐</span> Network Access</h3>
+      <ul>
+        <li>The only network request is to load Chart.js from a CDN (jsdelivr.net), which is cached by the service worker for offline use.</li>
+        <li>No analytics, tracking pixels, or advertising SDKs are included.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="icon">🔔</span> Notifications</h3>
+      <ul>
+        <li>If you grant notification permission, alerts (low battery, high temp, charge complete) are sent as <strong>local notifications only</strong>.</li>
+        <li>No push notification service is used.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="icon">📤</span> Export</h3>
+      <ul>
+        <li>CSV exports are generated locally and saved/shared via your device's native sharing mechanism.</li>
+        <li>No data is uploaded during export.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="icon">🚫</span> Third-Party Services</h3>
+      <p><strong>None.</strong> PowerAudit has zero dependencies on third-party analytics, advertising, or data collection services.</p>
+    </div>
+
+    <div class="card">
+      <h3><span class="icon">👶</span> Children's Privacy</h3>
+      <p>This app does not collect any data from anyone, including children under 13.</p>
+    </div>
+
+    <div class="card">
+      <h3><span class="icon">📝</span> Changes to This Policy</h3>
+      <p>If this policy changes, it will be updated within the app and on this page. Since no data is collected, changes would be minimal.</p>
+    </div>
+
+    <div class="card">
+      <h3><span class="icon">📬</span> Contact</h3>
+      <p>For questions about this privacy policy, please open an issue on the <a href="https://github.com/yourusername/Power-Monitor" style="color:var(--accent)">GitHub repository</a>.</p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>PowerAudit - Silent Battery & Power Auditor</p>
+    <p>
+      <a href="../">← Back to App</a>
+      &nbsp;·&nbsp;
+      <a href="https://buymeacoffee.com/samuel.wanjohi" target="_blank" rel="noopener noreferrer">☕ Buy Me a Coffee</a>
+    </p>
+  </div>
+
+</body>
+</html>
